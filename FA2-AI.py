@@ -106,7 +106,21 @@ def my_sort(lst):
     Returns:
         list: Een nieuwe, gesorteerde variant van lijst `lst`.
     """
-    lst_sorted = None
+    #kopie maken van lst
+    lst_sorted = lst.copy()
+    #waarde van not_sorted op True zetten om de while loop te activeren
+    not_sorted = True
+    while not_sorted:
+        # aannemen dat de lijst gesorteerd is
+        not_sorted = False
+        for x in range(len(lst)-1):
+            if lst_sorted[x] > lst_sorted[x+1]:
+                #wisselen van getallen
+                y = lst_sorted[x]
+                lst_sorted[x] = lst_sorted[x+1]
+                lst_sorted[x+1] = y
+                #aannamen aangepast
+                not_sorted = True
     return lst_sorted
 
 
@@ -123,8 +137,8 @@ def linear_search_recursive(lst, target):
     Returns:
         bool: Of het element in de lijst voorkomt.
     """
-    return False
-
+    #als het target in de lijst zit is het True anders False
+    return target in lst
 
 def binary_search_recursive(lst, target):
     """
@@ -140,7 +154,26 @@ def binary_search_recursive(lst, target):
     Returns:
         bool: Of het element in de lijst voorkomt.
     """
-    return False
+    #ik heb geleerd dat je niet zomaar van iets uit mag gaan :)
+    lst=my_sort(lst)
+    low = 0
+    high = len(lst) -1
+    mid = 0
+
+    while low <= high:
+        #bepaal het midden.
+        mid = (low + high) // 2
+        #kijk of target onder midden ligt of boven.
+        if target <= lst[mid]:
+            high = mid
+        else:
+            low = mid
+        #als low en high gelijk zijn dan moet target gelijk zijn daar aan.
+        if low == high:
+            return True
+        #als low en high niet kleiner kunnen. kijken of target in het midden ligt daarvan.
+        elif low+1 == high:
+            return lst[high] == target or lst[low] == target
 
 
 """
