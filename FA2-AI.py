@@ -40,7 +40,13 @@ studentnummer = 1803921
         lijst aanneemt bij álle tussenstappen bij toepassing van
         bovenstaand sorteeralgoritme.
 """
-        # TODO: [geef hier je antwoord]
+        # TODO:[ als de lijst niet gesorteerd is
+                # voor elke waarde in de lengte van de lijst
+                #   kijken of waarde 1 groter is dan de waarde daarnaast
+                #   daarna de getallen omwisselen zodat deze op een betere positie staan
+                #   dan aannemen dat de lijst gesorteerd is
+                #   dit herhalen tot de lijst volledig gesorteerd is 
+                # ]
 """
 
     1b. Implementatie
@@ -54,7 +60,7 @@ studentnummer = 1803921
             Hoeveel vergelijkingen (zoals beschreven in stap 1. van de
             pseudocode) zijn nodig geweest?
 """
-            # TODO: [geef hier je antwoord]
+            # TODO: [de lijst is het snelste klaar met sorteren als de volgorde 1,2,3 is]
 """
 
 
@@ -62,7 +68,7 @@ studentnummer = 1803921
             sorteeralgoritme het minst snel klaar (worst-case scenario)?
             Hoeveel vergelijkingen zijn nodig geweest?
 """
-            # TODO: [geef hier je antwoord]
+            # TODO: [volgorde 3, 2 ,1 duurt het langst om op volgorde te zetten]
 """
 
 
@@ -72,7 +78,10 @@ studentnummer = 1803921
             En wat is nu het worst-case scenario?
             Hoeveel vergelijkingen zijn er nodig?
 """
-            # TODO: [geef hier je antwoord]
+            # TODO: [bestcase: 1,2,3,4
+            # hier zijn 3 vergelijkingen voor nodig om de goede volgorde te bepalen
+            # worstcase: 4,3,2,1 of 3,4,2,1
+            # hier zijn 12 vergelijkingen voor nodig]
 """
 
 
@@ -84,7 +93,10 @@ studentnummer = 1803921
             En wat is nu het worst-case scenario?
             Hoeveel vergelijkingen zijn er nodig?
 """
-            # TODO: [geef hier je antwoord]
+            # TODO: [best case scenario is als de lijst al in de goede volgorde staat.
+            #       het aantal vergelijkingen ligt dan aan de lengte van de lijst
+            # worst case is als de lijst omgedraait staat
+            # dan is het aantal vergelijkingen ]
 """
 """
 
@@ -113,12 +125,13 @@ def my_sort(lst):
     while not_sorted:
         # aannemen dat de lijst gesorteerd is
         not_sorted = False
-        for x in range(len(lst)-1):
+        for x in range(len(lst_sorted)-1):
             if lst_sorted[x] > lst_sorted[x+1]:
                 #wisselen van getallen
                 y = lst_sorted[x]
                 lst_sorted[x] = lst_sorted[x+1]
                 lst_sorted[x+1] = y
+                print(lst_sorted)
                 #aannamen aangepast
                 not_sorted = True
     return lst_sorted
