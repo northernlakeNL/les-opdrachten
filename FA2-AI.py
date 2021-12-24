@@ -94,9 +94,9 @@ studentnummer = 1803921
             Hoeveel vergelijkingen zijn er nodig?
 """
             # TODO: [best case scenario is als de lijst al in de goede volgorde staat.
-            #       het aantal vergelijkingen ligt dan aan de lengte van de lijst
-            # worst case is als de lijst omgedraait staat
-            # dan is het aantal vergelijkingen ]
+            #       het aantal vergelijkingen dat word gebruikt is (n-1)
+            #       worst case is als de lijst omgedraait staat
+            #       dan is het aantal vergelijkingen n*(n-1)]
 """
 """
 
