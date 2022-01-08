@@ -118,21 +118,21 @@ def my_sort(lst):
     Returns:
         list: Een nieuwe, gesorteerde variant van lijst `lst`.
     """
-    #kopie maken van lst
+    # kopie maken van lst
     lst_sorted = lst.copy()
-    #waarde van not_sorted op True zetten om de while loop te activeren
+    # waarde van not_sorted op True zetten om de while loop te activeren
     not_sorted = True
     while not_sorted:
         # aannemen dat de lijst gesorteerd is
         not_sorted = False
         for x in range(len(lst_sorted)-1):
             if lst_sorted[x] > lst_sorted[x+1]:
-                #wisselen van getallen
+                # wisselen van getallen
                 y = lst_sorted[x]
                 lst_sorted[x] = lst_sorted[x+1]
                 lst_sorted[x+1] = y
                 print(lst_sorted)
-                #aannamen aangepast
+                # aannamen aangepast
                 not_sorted = True
     return lst_sorted
 
@@ -150,8 +150,18 @@ def linear_search_recursive(lst, target):
     Returns:
         bool: Of het element in de lijst voorkomt.
     """
-    #als het target in de lijst zit is het True anders False
-    return target in lst
+    # als het target in de lijst zit is het True anders False
+    # Kijk of de lijst groter is dan 0
+    if 0 >= len(lst):
+        print(False)
+        return False
+    # Kijk of de 0ste index gelijk is aan de target
+    if lst[0] == target:
+        print(True)
+        return True
+    # Haal de nulste index weg uit de lijst en kijk opnieuw
+    print('Nieuwe zoek lijst: ', lst[1:])
+    return linear_search_recursive(lst[1:], target)
 
 def binary_search_recursive(lst, target):
     """
@@ -167,24 +177,24 @@ def binary_search_recursive(lst, target):
     Returns:
         bool: Of het element in de lijst voorkomt.
     """
-    #ik heb geleerd dat je niet zomaar van iets uit mag gaan :)
+    # ik heb geleerd dat je niet zomaar van iets uit mag gaan :)
     lst=my_sort(lst)
-    low = 0
-    high = len(lst) -1
-    mid = 0
+    low = 0                 # nulste index
+    high = len(lst) -1      # lengte lijst -1 is maximale index
+    mid = 0                 # mid een nul waarde geven
 
     while low <= high:
-        #bepaal het midden.
+        # bepaal het midden.
         mid = (low + high) // 2
-        #kijk of target onder midden ligt of boven.
+        # kijk of target onder midden ligt of boven.
         if target <= lst[mid]:
             high = mid
         else:
             low = mid
-        #als low en high gelijk zijn dan moet target gelijk zijn daar aan.
+        # als low en high gelijk zijn dan moet target gelijk zijn daar aan.
         if low == high:
             return True
-        #als low en high niet kleiner kunnen. kijken of target in het midden ligt daarvan.
+        # als low en high niet kleiner kunnen. kijken of target in het midden ligt daarvan.
         elif low+1 == high:
             return lst[high] == target or lst[low] == target
 
