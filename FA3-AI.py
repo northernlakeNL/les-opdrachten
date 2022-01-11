@@ -39,7 +39,9 @@ def mean(lst):
     Returns:
         float: Het gemiddelde van de gegeven getallen.
     """
-    return
+    som = sum(lst)
+    antwoord = som / len(lst)
+    return antwoord
 
 
 def rnge(lst):
@@ -52,7 +54,7 @@ def rnge(lst):
     Returns:
         int: Het bereik van de gegeven getallen.
     """
-    return
+    return (max(lst) - min(lst))
 
 
 def median(lst):
@@ -65,8 +67,20 @@ def median(lst):
     Returns:
         float: De mediaan van de gegeven getallen.
     """
-    return
-
+    lst.sort()
+    print(lst)
+    length = len(lst)
+    if length % 2 != 0:
+        i = int((length - 1) / 2)
+        mediaan = lst[i]
+        print(mediaan)
+        return float(mediaan)
+    else:
+        i = int(length/2)
+        u = int(i-1)
+        mediaan = (lst[i]+lst[u])/2
+        print(mediaan)
+        return float(mediaan)
 
 def q1(lst):
     """
@@ -80,8 +94,13 @@ def q1(lst):
     Returns:
         float: Het eerste kwartiel Q1 van de gegeven getallen.
     """
-    return
-
+    list = []
+    mediaan1 = median(lst)
+    mediaan1 = float(mediaan1)
+    for x in lst:
+        if x < mediaan1:
+            list.append(x)
+    return median(list)
 
 def q3(lst):
     """
