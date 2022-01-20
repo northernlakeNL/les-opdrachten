@@ -24,6 +24,9 @@ Let op! Het is niet toegestaan om bestaande modules te importeren en te
 """
 
 # TODO: Vul hier je naam, klas en studentnummer in.
+from itertools import count
+
+
 naam = "Tom Noordermeer"
 klas = "TICT-ICT-V1K"
 studentnummer = 1803921
@@ -93,18 +96,15 @@ def q1(lst):
     """
     list = []
     mediaan1 = median(lst)
-    print(mediaan1)
     mediaan1 = mediaan1
     for x in lst:
         if x < mediaan1:
             list.append(x)
-            print(list)
         if x == mediaan1:
             list.append(x)
     for x in list:
         if x == mediaan1:
             list = list[:-1]
-            print(list)
             return median(list)
     return median(list)
 
@@ -120,18 +120,15 @@ def q3(lst):
     """
     list = []
     mediaan1 = median(lst)
-    print(mediaan1)
     mediaan1 = mediaan1
     for x in lst:
         if x > mediaan1:
             list.append(x)
-            print(list)
         if x == mediaan1:
             list.append(x)
     for x in list:
         if x == mediaan1:
             list = list[1:]
-            print(list)
             return median(list)
     return median(list)
 
@@ -146,7 +143,15 @@ def var(lst):
     Returns:
         float: De variantie van de gegeven getallen.
     """
-    return
+    kwadraat_lijst = []
+    gemiddelde = mean(lst)
+    for x in lst:
+        afstand = (float(x - gemiddelde))
+        kwadraat = (float(afstand**2))
+        kwadraat_lijst.append(kwadraat)
+    total = sum(kwadraat_lijst)
+    var = total / len(lst)
+    return var
 
 
 def std(lst):
@@ -159,8 +164,9 @@ def std(lst):
     Returns:
         float: De standaardafwijking van de gegeven getallen.
     """
-    return
-
+    return float(var(lst)**(1/2))
+    
+    
 
 def freq(lst):
     """
@@ -181,6 +187,11 @@ def freq(lst):
         {1: 3, 2: 2, 3: 1}
     """
     freqs = dict()
+    for x in lst:
+        try:
+            freqs[x] += 1
+        except KeyError:
+            freqs[x] = 1
     return freqs
 
 
@@ -203,7 +214,12 @@ def modes(lst):
         >> modes([1, 1, 2, 3, 2, 1])
         [1]
     """
+    freq_list = freq(lst)
     modi = []
+    maxi = max(freq_list.values())
+    for i in freq_list:
+        if freq_list[i] == maxi:
+            modi.append(i)
     return sorted(modi)
 
 
