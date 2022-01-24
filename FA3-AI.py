@@ -119,16 +119,15 @@ def q3(lst):
         float: Het derde kwartiel Q3 van de gegeven getallen.
     """
     list = []
-    mediaan1 = median(lst)
-    mediaan1 = mediaan1
+    mediaan1 = median(lst)              # mediaan een waarde geven
     for x in lst:
-        if x > mediaan1:
+        if x > mediaan1:                # alles wat groter is dan mediaan
+            list.append(x)  
+        if x == mediaan1:               # als een waarde gelijk is aan de mediaan
             list.append(x)
-        if x == mediaan1:
-            list.append(x)
-    for x in list:
-        if x == mediaan1:
-            list = list[1:]
+    for x in list:                      # voor elke waarde in de Q3 lijst
+        if x == mediaan1:               # als een waarde gelijk is aan de mediaan
+            list = list[1:]             # de 0ste waarde overslaan en beginnen bij de eerste waarde
             return median(list)
     return median(list)
 
@@ -144,13 +143,13 @@ def var(lst):
         float: De variantie van de gegeven getallen.
     """
     kwadraat_lijst = []
-    gemiddelde = mean(lst)
+    gemiddelde = mean(lst)                      # het gemiddelde van de lijst opvragen
     for x in lst:
-        afstand = (float(x - gemiddelde))
-        kwadraat = (float(afstand**2))
-        kwadraat_lijst.append(kwadraat)
-    total = sum(kwadraat_lijst)
-    var = total / len(lst)
+        afstand = (float(x - gemiddelde))       # de afstand tussen de waarde en het gemiddelde berekenen
+        kwadraat = (float(afstand**2))          # de kwadraat van afstand berekenen
+        kwadraat_lijst.append(kwadraat)         # kwadraat in een lege lijst zetten
+    total = sum(kwadraat_lijst)                 # de hele lijst van kwadraden optellen
+    var = total / len(lst)                      # de variatie in de lijst uitrekenen
     return var
 
 
