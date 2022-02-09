@@ -185,12 +185,24 @@ def freq(lst):
         >> freq([1, 1, 2, 3, 2, 1])
         {1: 3, 2: 2, 3: 1}
     """
+    modi = []
+    max_freq = 0
     freqs = dict()
+<<<<<<< Updated upstream
     for x in lst:
         try:
             freqs[x] += 1
         except KeyError:
             freqs[x] = 1
+=======
+    for x in freq:
+        if freqs > max(freq):
+            modi.clear()
+            max(freq) = freq
+            modi.append(getal)
+        if freqs == max(freq):
+            modi.append()
+>>>>>>> Stashed changes
     return freqs
 
 
