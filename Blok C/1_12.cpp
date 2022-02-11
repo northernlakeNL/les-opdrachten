@@ -1,25 +1,42 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main(){
-    int max;
-    cout << "Hoe Groot? ";
-    cin >> max;
-    std::string stars = "    \n";
-    char ch = '*';
-    for ( int i = 0; i < max; ++i){
-        if (i < max){
-            stars.append(1, ch);
-            std::cout << stars;
+    int max, spatie, k, i;
+    cout << "Grootte van de piramide:   ";
+    cin >> max; 
+    for (int i = 1, k = 0; i <= max; ++i, k =0)
+    {
+        for (spatie = 1; spatie <= max-i; ++spatie){
+            cout << " ";
+            }
+        while(k != i-1){
+            cout << "*";
+            ++k;
+            }
+        cout << endl;
         }
-    }
-    max = max + 1;
-    for ( int i = max - 1; i < max; i--){
-        if (i > 0){
-            stars.erase(i, ch);
-            std::cout << stars;
-        }
+    for (int i = max; i >= 1; --i)
+    {
+        for (int spatie = 0; spatie < max-i; ++spatie)
+            cout << " ";
+
+        for (int x = i; x <= i-1; ++x)
+            cout << "*";
+
+        for (int x = 0; x<i-1; ++x)
+            cout << "*";
+        cout << endl;
     }
     return 0;
-}
+    }
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+//  ****
+//   ***
+//    **
+//     *
