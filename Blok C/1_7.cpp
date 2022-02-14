@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
-main() {
+void een_seuven() {
     string zin;
-    cout << "Zin: \n";
+    cout << "Zin: ";
     getline(cin, zin);
     
     size_t lengte = zin.length();

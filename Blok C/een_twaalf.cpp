@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void een_twaalf(){
     int max, spatie, k, i;
     cout << "Grootte van de piramide:   ";
     cin >> max; 
@@ -29,15 +29,4 @@ int main(){
             cout << "*";
         cout << endl;
     }
-    return 0;
     }
-
-//     *
-//    **
-//   ***
-//  ****
-// *****
-//  ****
-//   ***
-//    **
-//     *
