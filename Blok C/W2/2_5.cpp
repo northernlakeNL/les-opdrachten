@@ -5,8 +5,6 @@
 #include "vector"
 using namespace std;
 
-//void twee_vijf(){
-//    int count(const vector<int> & numbers, const int x){
-//
-//    }
-//}
+void twee_vijf() {
+
+}

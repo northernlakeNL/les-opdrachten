@@ -1,0 +1,25 @@
+2.1
+    1.
+        numberOfCats()      - een integer
+    2.
+        firstVowel()        - een char
+    3.
+        getAge()            - een integer
+    4.
+        getName()           - een Boolean
+    5.
+        count()             - een integer
+    6.
+        printRow()          - een String
+    7.
+        uppercase()         - een Boolean
+    8.
+        isEqual()           - een Boolean
+    9.
+        readTextFile()      - een String
+    10.
+        isBike()            - een Boolean
+    11.
+        yourTeacher()       - een String
+
+2.2

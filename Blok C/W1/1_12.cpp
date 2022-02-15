@@ -3,7 +3,6 @@ using namespace std;
 
 void een_twaalf(){
     int max, spatie, k, i;
-    cout << "\n";
     cout << "Grootte van de piramide:   ";
     cin >> max; 
     for (int i = 1, k = 0; i <= max; ++i, k =0)

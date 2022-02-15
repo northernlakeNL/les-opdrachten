@@ -5,9 +5,17 @@
 
 using namespace std;
 
-void een_acht(){
+void een_acht() {
     int size;
     cout << "Hoe groot?";
     cin >> size;
-    cout << "test zin";
+    for (int i = 0; i <= size; ++i) {
+        if (i != size) {
+            for (int i = 0; i <= size; ++i) {cout << "*";
+            }
+        if (size) {
+            cout << endl;
+            }
+        }
+    }
 }
