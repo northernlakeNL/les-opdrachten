@@ -2,6 +2,7 @@
 using namespace std;
 void een_seuven() {
     string zin;
+    cout << "\n";
     cout << "Zin: ";
     getline(cin, zin);
     
