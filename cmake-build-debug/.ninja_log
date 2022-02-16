@@ -1,0 +1,20 @@
+# ninja log v5
+28	1307	6665820002728960	CMakeFiles/les_opdrachten.dir/Blok_C/een_twaalf.cpp.obj	2d2097c9c595909d
+5	824	6666683263937880	build.ninja	e9594bd480317959
+4	377	6667212024383820	CMakeFiles/les_opdrachten.dir/Blok_C/main.cpp.obj	72674bd5d1d1a6e5
+22	1316	6665820002778828	CMakeFiles/les_opdrachten.dir/Blok_C/1_7.cpp.obj	709789dda9e3d79f
+48	1244	6666683616842260	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_6.cpp.obj	709651a9dbc991e0
+423	601	6667226064639965	les_opdrachten.exe	b92cf8913e4bdc78
+3	422	6667226062874675	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj	429a121a655a140c
+95	1230	6666683616700961	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_11.cpp.obj	2956c1a143b54107
+32	1253	6666683616941999	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_10.cpp.obj	554492cbdec6fb91
+3	577	6667205590794422	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_7.cpp.obj	82222f8c2090b196
+39	1244	6666683616740861	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_8.cpp.obj	5d9c1acb6bac189d
+58	1249	6666683616902098	CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_5.cpp.obj	52649cf154951787
+27	1254	6666683616932023	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_9.cpp.obj	d786755f49443277
+3	417	6667226267104760	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj	429a121a655a140c
+418	599	6667226268899945	les_opdrachten.exe	b92cf8913e4bdc78
+4	372	6667226399083822	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj	429a121a655a140c
+372	530	6667226400617075	les_opdrachten.exe	b92cf8913e4bdc78
+3	374	6667226533025450	CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj	429a121a655a140c
+375	547	6667226534701702	les_opdrachten.exe	b92cf8913e4bdc78

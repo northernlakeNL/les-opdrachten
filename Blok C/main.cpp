@@ -17,12 +17,11 @@ int main() {
     string bestand, week;
     cout << "welke week?";
     getline(cin, week);
-    cout << endl;
     sleep(1);
     if (week == "1") {
         cout << "Welk bestand van week 1?  ";
-        cout << endl;
         getline(cin, bestand);
+        cout << endl;
         if (bestand == "6") {
             een_zes();
         }
