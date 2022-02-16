@@ -21,10 +21,8 @@ void een_twaalf(){
     {
         for (int spatie = 0; spatie < max-i; ++spatie)
             cout << " ";
-
         for (int x = i; x <= i; ++x)
             cout << "*";
-
         for (int x = 0; x<i-1; ++x)
             cout << "*";
         cout << endl;
