@@ -3,9 +3,9 @@ using namespace std;
 
 void een_twaalf(){
     int max, spatie, k, i;
-    cout << "Grootte van de piramide:   ";
+    cout << "Grootte van de piramide:";
     cin >> max; 
-    for (int i = 1, k = 0; i <= max; ++i, k =0)
+    for (int i = 2; i <= max; ++i, k =0)
     {
         cout << " ";
         for (spatie = 1; spatie <= max-i; ++spatie){
