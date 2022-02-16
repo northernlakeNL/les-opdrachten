@@ -2,6 +2,7 @@
 #include <iostream>
 #include <unistd.h>
 //week 1
+#include "W1/1_4.h"
 #include "W1/1_6.h"
 #include "W1/1_7.h"
 #include "W1/1_8.h"
@@ -17,11 +18,15 @@ int main() {
     string bestand, week;
     cout << "welke week?";
     getline(cin, week);
+    cout << endl;
     sleep(1);
     if (week == "1") {
         cout << "Welk bestand van week 1?  ";
-        getline(cin, bestand);
         cout << endl;
+        getline(cin, bestand);
+        if (bestand == "4") {
+            een_vier();
+        }
         if (bestand == "6") {
             een_zes();
         }

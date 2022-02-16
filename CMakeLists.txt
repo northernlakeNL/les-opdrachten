@@ -15,4 +15,4 @@ add_executable(les_opdrachten
         "Blok C/W1/1_12.cpp" "Blok C/W1/1_12.h"
         "Blok C/W2/2_5.cpp" "Blok C/W2/2_5.cpp"
 
-        )
+        "Blok C/W1/1_4.cpp" "Blok C/W1/1_4.h")

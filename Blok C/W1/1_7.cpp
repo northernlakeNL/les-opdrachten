@@ -3,12 +3,14 @@ using namespace std;
 void een_seuven() {
     string zin;
     cout << "\n";
-    cout << "Geef een string om te vertalen: ";
+    cout << "Geef een string om te vertalen:" << endl;
     getline(cin, zin);
+    
     size_t lengte = zin.length();
     for (size_t i = 0; i < lengte; i++)
         if (zin[i] >= 'a' && zin[i] <= 'z')
             zin[i] = zin[i] - 32;
+
     for (size_t i = 0; i < lengte; i++)
         if (zin[i] == 'E') {
             zin[i] = '3';}
@@ -18,6 +20,6 @@ void een_seuven() {
             zin[i] = '7';}
         else if (zin[i] == 'O') {
             zin[i] = '0';}
-    cout << "1337-speak:" << endl;
+    cout <<"1337-speak:" << endl;
     cout << zin;
 }
