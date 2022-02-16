@@ -3,7 +3,7 @@ using namespace std;
 void een_seuven() {
     string zin;
     cout << "\n";
-    cout << "Zin: ";
+    cout << "Geef een string om te vertalen:" << endl;
     getline(cin, zin);
     
     size_t lengte = zin.length();
@@ -20,5 +20,6 @@ void een_seuven() {
             zin[i] = '7';}
         else if (zin[i] == 'O') {
             zin[i] = '0';}
+    cout <<"1337-speak:" << endl;
     cout << zin;
 }
