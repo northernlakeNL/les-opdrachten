@@ -12,6 +12,8 @@
 #include "W1/1_12.h"
 //week 2
 #include "W2/2_5.h"
+#include "W2/2_10.h"
+#include "W2/2_12.h"
 using namespace std;
 
 int main() {
@@ -52,8 +54,17 @@ int main() {
     if (week == "2") {
         cout << "Welk bestand van week 2?  ";
         cout << endl;
-        if (bestand == "5") {
+        getline(cin, bestand);
+        if (bestand == "5"){
             twee_vijf();
         }
+        if (bestand == "10"){
+            twee_tien();
+        }
+        if (bestand == "12"){
+            twee_twaalf();
+        }
     }
+    return 0;
 }
+
