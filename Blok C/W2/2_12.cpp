@@ -8,34 +8,29 @@
 using namespace std;
 
 string reverse(string word){
-    string woord = word;
-    int n = woord.length();
+    int n = word.size();
     string back;
     for (int i=n-1; i>=0;i--){
-        back.push_back(woord[i]);
+        back.push_back(word[i]);        // letter verplaatsen
     }
-    cout << back << endl;
-    return back;
+    return back;            // omgedraaide woord terug sturen
 }
 
-bool isPalindroom(const string& word){
-    string originalWord = word;
-    reverse(originalWord);
-    for(unsigned int i=0; i<word.size(); i++){
-        if(word[i] != originalWord[i]){
-            return false;
+string isPalindroom(const string& word){
+    string woord = reverse(word);
+    for(unsigned int i=0; i<woord.size(); i++){
+        if(woord[i] == word[i]){ // checken of het gedraaide woord het zelfde is
+            return "True";
         }
+        return "False"; // anders False
     }
-    return true;
+    return "False";
 }
-
-
 
 void twee_twaalf(){
     string word;
     string palin;
-    cout << "een woord: ";
-    cin >> word;
-    palin = isPalindroom(word);
-    cout << palin;
+    cout << "kies een woord:";
+    getline(cin, word);
+    cout << "palindrooom is: "<< isPalindroom(word);
 }

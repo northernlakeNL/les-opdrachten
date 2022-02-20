@@ -16,7 +16,7 @@ int count(const vector<int> & numbers, const int x){
 }
 
 void twee_vijf(){
-    vector<int> n = {37,4,9,4,9,37,3,5,0,4,1};
+    vector<int> n = {37,4,9,4,9,37,3,5,0,4,1}; // voorbeeld
     int number_of_fours = count(n,4);
     cout << "The numbers of fours are: " << number_of_fours << endl;
 }
