@@ -78,18 +78,18 @@ int main() {
         }
     }
     if (week == "3") {
-        cout << "Welk bestand van week 1?  ";
+        cout << "Welk bestand van week 3?  ";
         cout << endl;
         getline(cin, bestand);
         if (bestand == "3") {
             drie_drie();
         }
-        if (bestand == "6") {
-            drie_zes();
-        }
-        if (bestand == "12") {
-            drie_twaalf();
-        }
+//        if (bestand == "6") {
+//            drie_zes();
+//        }
+//        if (bestand == "12") {
+//            drie_twaalf();
+//        }
     }
     return 0;
 }
