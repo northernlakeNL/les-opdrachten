@@ -16,6 +16,10 @@
 #include "W2/2_12.h"
 #include "W2/2_13.h"
 #include "W2/2_14.h"
+//week 3
+#include "W3/3_3.h"
+#include "W3/3_6.h"
+#include "W3/3_12.h"
 using namespace std;
 
 int main() {
@@ -71,6 +75,20 @@ int main() {
         }
         if (bestand == "14"){
             twee_veertien();
+        }
+    }
+    if (week == "3") {
+        cout << "Welk bestand van week 1?  ";
+        cout << endl;
+        getline(cin, bestand);
+        if (bestand == "3") {
+            drie_drie();
+        }
+        if (bestand == "6") {
+            drie_zes();
+        }
+        if (bestand == "12") {
+            drie_twaalf();
         }
     }
     return 0;
