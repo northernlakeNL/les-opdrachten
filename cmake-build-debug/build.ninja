@@ -55,6 +55,12 @@ build CMakeFiles/les_opdrachten.dir/Blok_C/main.cpp.obj: CXX_COMPILER__les_opdra
   OBJECT_DIR = CMakeFiles\les_opdrachten.dir
   OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C
 
+build CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_4.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W1/1_4.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W1\1_4.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W1
+
 build CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_7.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W1/1_7.cpp || cmake_object_order_depends_target_les_opdrachten
   DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W1\1_7.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -103,6 +109,48 @@ build CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj: CXX_COMPILER__les_op
   OBJECT_DIR = CMakeFiles\les_opdrachten.dir
   OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W1
 
+build CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_10.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W2/2_10.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W2\2_10.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W2
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_12.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W2/2_12.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W2\2_12.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W2
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_14.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W2/2_14.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W2\2_14.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W2
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_13.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W2/2_13.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W2\2_13.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W2
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_3.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W3/3_3.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W3\3_3.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W3
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_6.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W3/3_6.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W3\3_6.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W3
+
+build CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_12.cpp.obj: CXX_COMPILER__les_opdrachten_Debug C$:/Users/Tom/CLionProjects/les-opdrachten/Blok$ C/W3/3_12.cpp || cmake_object_order_depends_target_les_opdrachten
+  DEP_FILE = CMakeFiles\les_opdrachten.dir\Blok_C\W3\3_12.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\les_opdrachten.dir
+  OBJECT_FILE_DIR = CMakeFiles\les_opdrachten.dir\Blok_C\W3
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target les_opdrachten
@@ -111,7 +159,7 @@ build CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj: CXX_COMPILER__les_op
 #############################################
 # Link the executable les_opdrachten.exe
 
-build les_opdrachten.exe: CXX_EXECUTABLE_LINKER__les_opdrachten_Debug CMakeFiles/les_opdrachten.dir/Blok_C/main.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_7.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_5.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_6.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_8.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_9.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_10.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_11.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj
+build les_opdrachten.exe: CXX_EXECUTABLE_LINKER__les_opdrachten_Debug CMakeFiles/les_opdrachten.dir/Blok_C/main.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_4.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_7.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_5.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_6.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_8.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_9.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_10.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_11.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W1/1_12.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_10.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_12.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_14.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W2/2_13.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_3.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_6.cpp.obj CMakeFiles/les_opdrachten.dir/Blok_C/W3/3_12.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\les_opdrachten.dir
