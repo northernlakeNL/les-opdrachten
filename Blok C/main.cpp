@@ -87,9 +87,9 @@ int main() {
         if (bestand == "6") {
             drie_zes();
         }
-//        if (bestand == "12") {
-//            drie_twaalf();
-//        }
+        if (bestand == "12") {
+            drie_twaalf();
+        }
     }
 
     return 0;
