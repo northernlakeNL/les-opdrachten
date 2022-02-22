@@ -84,13 +84,14 @@ int main() {
         if (bestand == "3") {
             drie_drie();
         }
-//        if (bestand == "6") {
-//            drie_zes();
-//        }
+        if (bestand == "6") {
+            drie_zes();
+        }
 //        if (bestand == "12") {
 //            drie_twaalf();
 //        }
     }
+
     return 0;
 }
 
