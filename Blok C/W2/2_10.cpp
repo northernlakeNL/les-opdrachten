@@ -15,7 +15,7 @@ int counter(const vector<int> & numbers, const int x){
     return counting;
 }
 
-int control(){
+bool control(){
     vector<int> list = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1};
     int nul = counter(list, 0);
     int een = counter(list, 1);
@@ -24,16 +24,21 @@ int control(){
             return 0;       //  vervang voor "return 0" als het een int main functie is
         }
         else if (een > nul) {   // check of een groter is dan nul
-            return 1;       //  vervang voor "return 0" als het een int main functie is
+            return true;       //  vervang voor "return 0" als het een int main functie is
         }
     }
     else{
-        return 0;           //  vervang voor "return 0" als het een int main functie is
+        return false;           //  vervang voor "return 0" als het een int main functie is
     }
-    return 0;
+    return false;
 }
 
 void twee_tien() {
-    int c = control();
-    cout << "returned: " << c;
+    bool c = control();
+    if ( c == true){
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
 }
