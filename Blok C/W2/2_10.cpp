@@ -35,5 +35,5 @@ int control(){
 
 void twee_tien() {
     int c = control();
-    cout << "exit code " << c;
+    cout << "returned: " << c;
 }

@@ -7,15 +7,15 @@
 using namespace std;
 
 string check(vector <int> list){
-    for (int i = 0; i < list.size();){
+    for (int i = 0; i < list.size()-1;){
         if (list[i] <= list[i+1]){          // checken of list i kleiner is dan de volgende
             ++i;
         }
         else if (list[i] > list[i+1]){      // als i groter is dan de volgende is de lijst niet gesorteerd
-            return "de reeks is niet gesorteerd. \n";
+            return "de reeks is niet gesorteerd.\n";
         }
     }
-    return "De reeks is gesorteerd. \n";
+    return "De reeks is gesorteerd.\n";
 }
 
 vector<int> numbers() {
@@ -62,6 +62,6 @@ void twee_veertien() {
     cout << returned;
     cout << "de gemiddelde waarde is: " << average << endl;
     cout << "de minimum waarde is: " << minimum << endl;
-    cout << "de reeks bevat: " << amount << " getallen" << endl;
+    cout << "de reeks bevat " << amount << " getallen." << endl;
 }
 

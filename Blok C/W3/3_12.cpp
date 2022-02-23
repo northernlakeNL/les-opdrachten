@@ -1,6 +1,3 @@
-//
-// Created by tomno on 20/02/2022.
-//
 #include "iostream"
 #include "vector"
 using namespace std;
@@ -14,7 +11,6 @@ vector<vector<int>> transpose(vector<vector<int>> & matrix){
     }
     return matrix;
 }
-
 
 void drie_twaalf(){
     vector<vector<int>> team = { {1,2,3},
