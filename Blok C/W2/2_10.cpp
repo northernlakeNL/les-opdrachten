@@ -35,10 +35,10 @@ bool control(){
 
 void twee_tien() {
     bool c = control();
-    if ( c == true){
+    if (c == true){
         cout << "True";
     }
-    else {
+    else{
         cout << "False";
     }
 }
