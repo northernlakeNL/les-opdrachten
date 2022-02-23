@@ -7,9 +7,9 @@ vector<vector<int>> transpose(vector<vector<int>> & matrix){
     for (int x = 0; x<matrix.size(); ++x){
         for (int y = 0; y<matrix[x].size(); ++y) {
             cout << matrix[x][y];
-            for (vector<int> c = {};
-                matrix2.insert(matrix2.end(), c);
-            }
+//            for (vector<int> c = {};
+//                matrix2.insert(matrix2.end(), c);
+//            }
         }
 
     }
