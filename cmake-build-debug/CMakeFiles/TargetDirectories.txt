@@ -1,3 +1,3 @@
-C:/Users/tomno/Desktop/les-opdrachten/cmake-build-debug/CMakeFiles/les_opdrachten.dir
-C:/Users/tomno/Desktop/les-opdrachten/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tomno/Desktop/les-opdrachten/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/tomno/C++/les-opdrachten/cmake-build-debug/CMakeFiles/les_opdrachten.dir
+C:/Users/tomno/C++/les-opdrachten/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tomno/C++/les-opdrachten/cmake-build-debug/CMakeFiles/rebuild_cache.dir

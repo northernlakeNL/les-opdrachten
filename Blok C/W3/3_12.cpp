@@ -3,16 +3,18 @@
 using namespace std;
 
 vector<vector<int>> transpose(vector<vector<int>> & matrix){
-    vector<int> matrix_temp1;
-    vector<int> matrix_temp2;
-    vector<int> matrix_temp3;
-    vector<vector<int>> matrix2;
+    vector<vector<int>> matrix2 = {{},{},{}};
+    int counter = 0;
     for (int x = 0; x<matrix.size(); ++x){
-        for (int y = 0; y<matrix[x].size(); ++y) {
-        }
-            cout << endl;
+        int counter2 = 0;
+        matrix2[counter2].push_back((matrix[counter][0]));
+        counter2++;
+        matrix2[counter2].push_back((matrix[counter][1]));
+        counter2++;
+        matrix2[counter2].push_back((matrix[counter][2]));
+        counter++;
     }
-    return matrix;
+    return matrix2;
 }
 
 void drie_twaalf(){
@@ -20,10 +22,10 @@ void drie_twaalf(){
                                  {4,5,6},
                                  {7,8,9}};
     vector<vector<int>> swapped = transpose(team);
-//    for (int x = 0; x < swapped.size();++x){
-//        for (int y = 0; y < swapped[x].size(); ++y){
-//            cout << swapped[x][y]<<",";
-//        }
-//        cout << endl;
-//    }
+    for (int x = 0; x < swapped.size();++x){
+        for (int y = 0; y < swapped[x].size(); ++y){
+            cout << swapped[x][y]<<",";
+        }
+        cout << endl;
+    }
 }
