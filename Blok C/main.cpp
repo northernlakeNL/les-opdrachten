@@ -20,6 +20,8 @@
 #include "W3/3_3.h"
 #include "W3/3_6.h"
 #include "W3/3_12.h"
+//week 4
+#include "W4/4_2.h"
 using namespace std;
 
 int main() {
@@ -91,7 +93,14 @@ int main() {
             drie_twaalf();
         }
     }
-
+    if (week == "4") {
+        cout << "Welk bestand van week 4?";
+        cout << endl;
+        getline(cin, bestand);
+        if (bestand == "2") {
+            void vier_twaalf();;
+        }
+    }
     return 0;
 }
 
