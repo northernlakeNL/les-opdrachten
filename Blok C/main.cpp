@@ -22,6 +22,8 @@
 #include "W3/3_12.h"
 //week 4
 #include "W4/4_2.h"
+#include "W4/4_5.h"
+#include "W4/4_6.h"
 using namespace std;
 
 int main() {
@@ -98,7 +100,13 @@ int main() {
         cout << endl;
         getline(cin, bestand);
         if (bestand == "2") {
-            vier_twee();;
+            vier_twee();
+        }
+        if (bestand == "5"){
+            vier_vijf();
+        }
+        if (bestand == "6"){
+            vier_zes();
         }
     }
     return 0;
