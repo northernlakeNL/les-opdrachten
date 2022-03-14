@@ -4,21 +4,15 @@ using namespace std;
 
 vector<vector<int>> transpose(vector<vector<int>> & matrix){
     int temp = 0;
-    vector<int> used = {1};
+    vector<int> used = {};
     for (int x = 0; x < matrix.size(); ++x) {
-        for (int y = 0; y < matrix[x].size(); ++y) {
-            for (int z = 0; z < used.size(); ++z) {
-                do{
-                    temp = matrix[x][y];
-                    used.push_back(temp);
-                    matrix[x][y] = matrix[y][x];
-                    matrix[y][x] = temp;
+        for (int y = 1; y < matrix[x].size(); ++y) {
+            temp = matrix[x][y];
+            matrix[x][y] = matrix[y][x];
+            matrix[y][x] = temp;
+            used.push_back(matrix[x][y]);
                 }
-                while(temp != used[z]);
-                }
-            continue;
             }
-        }
     return matrix;
 }
 
