@@ -1,1 +1,1 @@
-void vier_twaalf();
+void vier_twee();

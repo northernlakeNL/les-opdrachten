@@ -98,7 +98,7 @@ int main() {
         cout << endl;
         getline(cin, bestand);
         if (bestand == "2") {
-            void vier_twaalf();;
+            vier_twee();;
         }
     }
     return 0;
