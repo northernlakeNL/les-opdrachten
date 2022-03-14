@@ -5,7 +5,7 @@ using namespace std;
 vector<vector<int>> transpose(vector<vector<int>> & matrix){
     int temp = 0;
     vector<int> used = {};
-    for (int x = 0; x < matrix.size(); ++x) {
+    for (int x = 0; x < matrix.size()-1; ++x) {
         for (int y = 1; y < matrix[x].size(); ++y) {
             temp = matrix[x][y];
             matrix[x][y] = matrix[y][x];
