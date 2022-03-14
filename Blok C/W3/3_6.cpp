@@ -32,5 +32,9 @@ void drie_zes(){
                                     {34, 83, 80, 97, 36, 45, 20, 13, 30, 68, 75},
                                     {22, 7, 4, 61, -18, 58, -52, -56,-36, -93, 62},
                                     {-9, -76, -54, -7, 15, -1, 69, -78, -19, -35, -75}};
-    cout << average(random);
+    float ave =  average(random);
+    int temp1 = ave * 100;
+    float temp2 = temp1;
+    ave = temp2/100;
+    cout << ave;
 }
