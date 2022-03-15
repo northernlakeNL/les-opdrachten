@@ -1,6 +1,3 @@
-//
-// Created by tomno on 20/02/2022.
-//
 #include "iostream"
 #include "vector"
 
@@ -11,7 +8,7 @@ float average_list(vector<int> list){           // Het gemiddelde uitrekenen van
     for (int x = 1; x < list.size(); ++x){
         total = total + list[x];            // alles bij elkaar optellen
     }
-    float av = total/(0+list.size());       // delen door de lengte om het gemiddelde te krijgen
+    int av = (total/(0+list.size())*100);       // delen door de lengte om het gemiddelde te krijgen
     return av;
 }
 
@@ -33,8 +30,7 @@ void drie_zes(){
                                     {22, 7, 4, 61, -18, 58, -52, -56,-36, -93, 62},
                                     {-9, -76, -54, -7, 15, -1, 69, -78, -19, -35, -75}};
     float ave =  average(random);
-    int temp1 = ave * 100;
-    float temp2 = temp1;
-    ave = temp2/100;
-    cout << ave;
+    cout << ave << endl;
+    ave = ave/100;
+    cout << "average = " << ave;
 }
