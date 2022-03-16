@@ -8,7 +8,7 @@ float average_list(vector<int> list){           // Het gemiddelde uitrekenen van
     for (int x = 1; x < list.size(); ++x){
         total = total + list[x];            // alles bij elkaar optellen
     }
-    int av = (total/(0+list.size())*100);       // delen door de lengte om het gemiddelde te krijgen
+    float av = (total/(0+list.size())*10);       // delen door de lengte om het gemiddelde te krijgen
     return av;
 }
 
@@ -21,7 +21,6 @@ float average(vector<vector<int>> list){
     int total_av = average_list(sum); // het gemiddelde van alle lijsten optellen
     return total_av;
 }
-
 
 void drie_zes(){
     vector<vector<int>> random = {  {7, 82, 52, 96, 65, 33, 16, 23,18, 3, 6},           // willekeurig gekozen nummers
