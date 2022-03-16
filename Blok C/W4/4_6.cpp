@@ -1,10 +1,8 @@
-//
-// Created by tomno on 14/03/2022.
-//
-
 #include "iostream"
+#include "string"
 using namespace std;
 
 void vier_zes(){
-
+    string ch = "10110001";
+    n;
 }
