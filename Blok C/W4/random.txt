@@ -29,6 +29,7 @@ void drie_zes(){
                                     {22, 7, 4, 61, -18, 58, -52, -56,-36, -93, 62},
                                     {-9, -76, -54, -7, 15, -1, 69, -78, -19, -35, -75}};
     float ave =  average(random);
+    cout << ave << endl;
     ave = ave/100;
     cout << "average = " << ave;
 }

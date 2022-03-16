@@ -9,8 +9,8 @@ void transpose(vector<vector<int>> & matrix){
             temp = matrix[x][y];
             matrix[x][y] = matrix[y][x];
             matrix[y][x] = temp;
-                }
-            };
+        }
+    }
 }
 
 void drie_twaalf(){
