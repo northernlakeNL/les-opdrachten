@@ -2,7 +2,9 @@
 #include "vector"
 
 using namespace std;
+    s
 
+ 45
 float average_list(vector<int> list){           // Het gemiddelde uitrekenen van de een lijst
     float total = list[0];
     for (int x = 1; x < list.size(); ++x){

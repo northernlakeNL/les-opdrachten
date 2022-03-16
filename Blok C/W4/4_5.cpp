@@ -7,19 +7,25 @@ void compress(string src_filename, string dest_filename){
     string zin;
     ifstream myfile(src_filename);
     ofstream myfile2(dest_filename);
-    if (myfile.is_open() ) {
+    if (myfile.is_open()) {
         while(getline(myfile, zin)) {
-            for ( char c : zin){
-//                if ( c == '\t'){
-//                    zin.erase('\t');
-//                }
-                if (zin.length() == 0){
-                    zin.erase();
+            if(zin == ""){
+                continue;
+            }
+            if (zin[0] == ' ') {
+                for (unsigned int x = 0; x < zin.length(); x++) {
+                    if (zin[x] == ' ') {
+                        myfile2 << zin.substr(x, (zin.length() - x)) << '\n';
+                        continue;
+                    }
                 }
             }
-            cout << zin << endl;
+            else{
+                myfile2 << zin << '\n';
+            }
         }
         myfile.close();
+        myfile2.close();
     }
     else{
         cout << "no file available";
