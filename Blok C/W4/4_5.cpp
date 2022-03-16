@@ -13,11 +13,12 @@ void compress(string src_filename, string dest_filename){
                 continue;
             }
             if (zin[0] == ' ') {
-                for (unsigned int x = 0; x < zin.length(); x++) {
+                for (int x = 0; x < zin.length(); x++) {
                     if (zin[x] == ' ') {
-                        myfile2 << zin.substr(x, (zin.length() - x)) << '\n';
                         continue;
                     }
+                myfile2 << zin.substr(x, (zin.length() - x)) << '\n';
+                    break;
                 }
             }
             else{
