@@ -21,4 +21,4 @@ add_executable(les_opdrachten
         "Blok C/W2/2_13.cpp" "Blok C/W2/2_13.h"
         "Blok C/W3/3_3.cpp" "Blok C/W3/3_3.h"
         "Blok C/W3/3_6.cpp" "Blok C/W3/3_6.h"
-        "Blok C/W3/3_12.cpp" "Blok C/W3/3_12.h" "Blok C/W4/4_2.cpp" "Blok C/W4/4_2.h" "Blok C/W4/winners.h" "Blok C/W4/winners.cpp" "Blok C/W4/4_5.cpp" "Blok C/W4/4_5.h" "Blok C/W4/4_6.cpp" "Blok C/W4/4_6.h")
+        "Blok C/W3/3_12.cpp" "Blok C/W3/3_12.h" "Blok C/W4/4_2.cpp" "Blok C/W4/4_2.h" "Blok C/W4/winners.h" "Blok C/W4/winners.cpp" "Blok C/W4/4_5.cpp" "Blok C/W4/4_5.h" "Blok C/W4/4_6.cpp" "Blok C/W4/4_6.h" "Blok C/W5/5_4.cpp" "Blok C/W5/5_4.h" "Blok C/W5/5_6.cpp" "Blok C/W5/5_6.h" "Blok C/W5/5_8.cpp" "Blok C/W5/5_8.h")

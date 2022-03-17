@@ -24,17 +24,20 @@
 #include "W4/4_2.h"
 #include "W4/4_5.h"
 #include "W4/4_6.h"
+//week 5
+#include "W5/5_4.h"
+#include "W5/5_6.h"
+#include "W5/5_8.h"
 using namespace std;
 
 int main() {
     string bestand, week;
     cout << "welke week?";
     getline(cin, week);
-    cout << endl;
     sleep(1);
+    //week 1
     if (week == "1") {
         cout << "Welk bestand van week 1?  ";
-        cout << endl;
         getline(cin, bestand);
         if (bestand == "4") {
             een_vier();
@@ -61,9 +64,9 @@ int main() {
             een_twaalf();
         }
     }
+    //week 2
     if (week == "2") {
         cout << "Welk bestand van week 2?";
-        cout << endl;
         getline(cin, bestand);
         if (bestand == "5"){
             twee_vijf();
@@ -81,9 +84,9 @@ int main() {
             twee_veertien();
         }
     }
+    //week 3
     if (week == "3") {
         cout << "Welk bestand van week 3?  ";
-        cout << endl;
         getline(cin, bestand);
         if (bestand == "3") {
             drie_drie();
@@ -95,9 +98,9 @@ int main() {
             drie_twaalf();
         }
     }
+    //week 4
     if (week == "4") {
         cout << "Welk bestand van week 4?";
-        cout << endl;
         getline(cin, bestand);
         if (bestand == "2") {
             vier_twee();
@@ -107,6 +110,20 @@ int main() {
         }
         if (bestand == "6"){
             vier_zes();
+        }
+    }
+    //week 5
+    if (week == "5"){
+        cout << "welk bestand van week 5?";
+        getline(cin, bestand);
+        if (bestand == "4"){
+            vijf_vier();
+        }
+        if (bestand == "6"){
+            vijf_zes();
+        }
+        if (bestand == "8"){
+            vijf_acht();
         }
     }
     return 0;
