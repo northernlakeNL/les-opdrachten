@@ -1,0 +1,108 @@
+opdracht 1
+
+
+vector <int> nums = {1,8,-5,2,-7};
+cout << "het gemiddelde negatieve getal is: ";
+cout << averageNegatives(nums);
+
+float averageNegatives(const vector<int> & nums){
+	float total = 0;
+	int count = 0;
+	for (unsigned int x = 0; x < nums.size(); x++){
+		if ( nums[x] < 0){
+			total = total + nums[x];
+			count++;
+		}
+	}
+	average = total / count;
+	return average;
+}
+
+
+opdracht 2
+
+	
+
+
+	
+opdracht 3
+
+int rec_min_pos(const vector<int> & nums, int size){ 
+	int small;
+	for (int x = size; x != -1; --x){
+		if (nums[x] > 0){
+			small = nums[x];
+			rec_min_pos(nums, size-1);
+		}
+		if (nums[x] < 0){
+			rec_min_pos(nums, size-1);
+		}
+	return small;
+	}
+}
+
+int main(){
+	vector<int> nums = {2, -3, 6, -21, 10, -80, 8}; 
+	cout << "Het kleinste positieve getal is: "; 
+	cout << rec_min_pos(nums, nums.size());
+}
+
+
+
+opdracht 4
+
+struct line{
+    string text;
+    int n_spaces;
+};
+
+void countSpaces(vector<line> & lines){
+    int count;
+    char space = ' ';
+    for (int x = 0; x < lines.size(); x++){
+        count = 0;
+        for(auto c : lines[x].text){
+            if (c == space) {
+                count++;
+            }
+            if (c != space){
+                lines[x].n_spaces = {count};
+                break;
+            }
+        }
+    }
+}
+
+void test(){
+    vector<line> lines = {{"   oke bye", -1}, {" wild wild west ", -1}};
+    countSpaces(lines);
+    cout << "amount of spaces at the start of line0: " << lines[0].n_spaces << "\n";
+    cout << "amount of spaces at the start of line1: " << lines[1].n_spaces << "\n";
+}
+
+
+
+opdracht 5
+
+vector<int> m = {{1,1,3},{1,5,6},{7,8,9}}; 
+vector<int> v = maxRow(m); 
+cout << "v: ";  
+for(unsigned int i=0; i<v.size(); i++){ 
+	cout << v[i] << ", "; 
+}
+
+Vector<int> maxRow (const vector<vector<int>> & lines){ 
+	int max = 0;
+	int max_row = -1;
+	int temp = 0;
+	for (int x = 0; x < lines.size(); ++x){
+		for (int y = 0; y < lines[x].size(); ++y){
+			temp = temp + lines[x][y];
+		}
+		if ( temp > max){
+			max = temp;
+			max_row = x;
+		}
+	}
+	return lines[max_row];
+ }
