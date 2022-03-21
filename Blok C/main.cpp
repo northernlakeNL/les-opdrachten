@@ -28,6 +28,8 @@
 #include "W5/5_4.h"
 #include "W5/5_6.h"
 #include "W5/5_8.h"
+//test
+#include "test.h"
 using namespace std;
 
 int main() {
@@ -125,6 +127,9 @@ int main() {
         if (bestand == "8"){
             vijf_acht();
         }
+    }
+    if (week == "0"){
+        test();
     }
     return 0;
 }
