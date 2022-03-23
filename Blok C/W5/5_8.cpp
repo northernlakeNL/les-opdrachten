@@ -9,6 +9,25 @@ struct compas{
     int amount;
 };
 
+void final(vector<compas> map) {
+    if (map[0].amount > map[1].amount) {
+        int north = map[0].amount - map[1].amount;
+        cout << "north" <<  north;
+    }
+    if (map[1].amount > map[0].amount) {
+        int south = map[1].amount - map[0].amount;
+        cout << "south: " << south;
+    }
+    if (map[2].amount > map[3].amount) {
+        int west = map[2].amount - map[3].amount;
+        cout << "west:" <<  west;
+    }
+    if (map[3].amount > map[2].amount) {
+        int east = map[3].amount - map[2].amount;
+        cout << "east:" << east;
+    }
+}
+
 vector<compas> richting(vector<string> map, int size, vector<compas> map2){
     if (size >= 0){
         if (map[size] == "north") {
@@ -51,20 +70,5 @@ void vijf_acht(){
                            {"west",  0},
                            {"east",  0}};
     map2 = richting(map, map.size() -1, map2);
-    if (map2[0].amount > map2[1].amount){
-            int north = map2[0].amount - map2[1].amount;
-            cout << "north: " << north << endl;
-        }
-    if (map2[1].amount > map2[0].amount){
-        int south = map2[1].amount - map2[0].amount;
-        cout << "south: " << south << endl;
-    }
-    if (map2[2].amount > map2[3].amount){
-        int west = map2[2].amount - map2[3].amount;
-        cout << "west: " << west << endl;
-    }
-    if (map2[3].amount > map2[2].amount) {
-        int east = map2[3].amount - map2[2].amount;
-        cout << "east: " << east << endl;
-    }
+    final(map2);
 }

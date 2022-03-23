@@ -12,9 +12,9 @@ void compress(string src_filename, string dest_filename){
             if(zin == ""){
                 continue;
             }
-            if (zin[0] == ' ') {
+            if (zin[0] == ' ' || zin[0] == '\t') {
                 for (int x = 0; x < zin.length(); x++) {
-                    if (zin[x] == ' ') {
+                    if (zin[x] == ' ' || zin[0] == '\t') {
                         continue;
                     }
                 myfile2 << zin.substr(x, (zin.length() - x)) << '\n';
