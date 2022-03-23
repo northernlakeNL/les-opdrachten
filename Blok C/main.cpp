@@ -39,7 +39,7 @@ int main() {
     sleep(1);
     //week 1
     if (week == "1") {
-        cout << "Welk bestand van week 1?  ";
+        cout << "Welk bestand van week 1?";
         getline(cin, bestand);
         if (bestand == "4") {
             een_vier();
@@ -88,7 +88,7 @@ int main() {
     }
     //week 3
     if (week == "3") {
-        cout << "Welk bestand van week 3?  ";
+        cout << "Welk bestand van week 3?";
         getline(cin, bestand);
         if (bestand == "3") {
             drie_drie();
