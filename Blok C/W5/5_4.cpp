@@ -9,6 +9,7 @@ int fibonacci(int x){
         return(fibonacci(x-1) + fibonacci(x-2));        // x -1 en x -2 samen voegen en returnen
     }
 }
+
 void vijf_vier(){
     int febo , f = 0;
     cout << "lengte van de lijst:";
