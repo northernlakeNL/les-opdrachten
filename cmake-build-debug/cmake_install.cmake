@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/tomno/C++/les-opdrachten
+# Install script for directory: C:/Users/tomno/Documenten/GitHub/les-opdrachten
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tomno/C++/les-opdrachten/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/tomno/Documenten/GitHub/les-opdrachten/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
