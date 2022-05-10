@@ -31,7 +31,8 @@
 //test
 #include "Blok C/test.h"
 //week 1
-#include "C:\Users\tomno\Documenten\GitHub\les-opdrachten\Blok D\Book\mainbook.h"
+#include "Blok D/Book/mainbook.h"
+#include "C:\Users\tomno\Documenten\GitHub\les-opdrachten\Blok D\meubels\meubelsmain.h"
 using namespace std;
 
 int main() {
@@ -152,10 +153,14 @@ int main() {
                 bookmain();
             }
             if (bestand == "meubels"){
+                mainmeubels();
+            }
+            if (bestand == "test"){
 
             }
         }
     }
     return 0;
 }
+
 

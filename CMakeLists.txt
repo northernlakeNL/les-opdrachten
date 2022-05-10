@@ -32,4 +32,5 @@ add_executable(les_opdrachten
         "Blok C/test.cpp" "Blok C/test.h"
         "Blok D/Book/book.cpp" "Blok D/Book/book.h"
         "Blok D/Book/mainbook.cpp" "Blok D/Book/mainbook.cpp"
+        "Blok D/meubels/meubels.cpp" "Blok D/meubels/meubelsmain.cpp"
         )
