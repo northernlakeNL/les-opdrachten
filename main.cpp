@@ -30,9 +30,12 @@
 #include "Blok C/W5/5_8.h"
 //test
 #include "Blok C/test.h"
+#include "Blok D/line/testmain.h"
+#include "Blok D/test/oo test main.h"
 //week 1
 #include "Blok D/Book/mainbook.h"
-#include "C:\Users\tomno\Documenten\GitHub\les-opdrachten\Blok D\meubels\meubelsmain.h"
+#include "Blok D/meubels/meubelsmain.h"
+#include "Blok D/rechthoek/rechthoekmain.h"
 using namespace std;
 
 int main() {
@@ -149,14 +152,20 @@ int main() {
             cout << "Welk bestand van week 1?";
             getline(cin, bestand);
             cout << endl;
+//            if (bestand == "test"){
+//                linemain();
+//            }
+            if (bestand == "test2"){
+                meen();
+            }
             if (bestand == "book") {
                 bookmain();
             }
             if (bestand == "meubels"){
                 mainmeubels();
             }
-            if (bestand == "test"){
-
+            if (bestand == "rechthoek"){
+                mainrechthoek();
             }
         }
     }

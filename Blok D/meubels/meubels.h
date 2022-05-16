@@ -3,36 +3,87 @@
 
 #include <iostream>
 
-class stool {
+class stool{
 private:
-    int n_legs;
-    int n_seats;
-    void print_legs();
-    void print_seats();
+    int N_legs;
+    int N_seats;
 public:
-    stool(const int& n_legs, const int& n_seats) :
-        n_legs(n_legs), n_seats(n_seats) {
-        }
-    void print();
+    void setLegs(int n_legs){
+        N_legs = n_legs;
+    }
+    int getLegs(){
+        return N_legs;
+    }
+    void setseats(int n_seats){
+        N_seats = n_seats;
+    }
+    int getSeats(){
+        return N_seats;
+    }
+    stool(int n_legs, int n_seats){
+        N_legs = n_legs;
+        N_seats = n_seats;
+    }
 };
 
 class table{
 private:
-    int n_legs;
-    int length;
-    int width;
-    void print_legs();
-    void print_length();
-    void print_width();
+    int N_Legs;
+    int Length;
+    int Width;
 public:
-    table(const int& n_legs, const int& length, const int& width):
-    n_legs(n_legs), length(length), width(width){
+    void setLegs(int n_legs){
+        N_Legs = n_legs;
     }
-    void print();
+    int getLegs(){
+        return N_Legs;
+    }
+    void setLength(int length){
+        Length = length;
+    }
+    int getLength(){
+        return Length;
+    }
+    void setWidth(int width){
+        Width = width;
+    }
+    int getWidth(){
+        return Width;
+    }
+    table(int n_legs, int length, int width){
+        N_Legs = n_legs;
+        Length = length;
+        Width = width;
+    }
 };
 
-class furniture{
-
+class furniture:public stool, public table{
+private:
+    int Amount_seats;
+    int Amount_tables;
+public:
+    void setSeats(int amount_seats){
+        Amount_seats = amount_seats;
+    }
+    int getseats(){
+        return Amount_seats;
+    }
+    void setTable(int amount_tables){
+        Amount_tables = amount_tables;
+    }
+    int getTable(){
+        return Amount_tables;
+    }
+    furniture(int amount_seats, int amount_tables, int N_legs, int N_Seats, int N_Legs, int Length, int Width)
+        : table(N_Legs,Length,Width), stool(N_legs, N_Seats)
+    {
+        Amount_seats = amount_seats;
+        Amount_tables = amount_tables;
+    }
+    void MakeMoreHipster(){
+        stool::setLegs(stool::getLegs()-1);
+        table::setLegs((table::getLegs())+(Amount_seats*1));
+    }
 };
 
 #endif // MEUBELS_H
